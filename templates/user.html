@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} User Templates {% endblock %}
+
+
+
+{% block body %}
+
+{% if name %}
+
+<h1> Hello, {{name }}! </h1>
+
+<h2> HOW ARE YOU DOING TODAY?</h2>
+
+{% else %}
+
+<h1>Hi Newbie!</h1>
+
+{% endif %}
+
+{% endblock %}

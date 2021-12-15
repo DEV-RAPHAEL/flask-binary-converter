@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block head %}
+    {{ super () }}
+
+    <style>
+         p{
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+<h1> HELLO Newbie!</h1>
+
+<h2>We have some users on this website already</h2>
+
+<marquee behavior="Scroll" direction="ltr">Our Precious Users</marquee>
+
+<ul>
+    {% for users in users %}
+    <li> {{ users }} </li>
+    {% endfor %}    
+</ul>
+{% endblock  %}
